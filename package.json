@@ -1,0 +1,42 @@
+{
+  "name": "bbinteractivehelper",
+  "version": "0.0.1",
+  "description": "Bobril helper for Interactive GUI tests",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "bb b -b 1 -m 0 &&  cd dist && ren a.js bbInteractiveHelper.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bobril": {
+    "dependencies": "upgrade",
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "strict": true,
+      "declaration": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedlakr/bbInteractiveHelper.git"
+  },
+  "keywords": [
+    "bobril",
+    "interactive"
+  ],
+  "author": "Radek Sedlák",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedlakr/bbInteractiveHelper/issues"
+  },
+  "homepage": "https://github.com/sedlakr/bbInteractiveHelper#readme",
+  "dependencies": {
+    "bobril": "^14.0.0"
+  }
+}
